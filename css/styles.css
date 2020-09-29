@@ -10124,6 +10124,13 @@ header.masthead h1 {
     font-size: 3.5rem;
   }
 }
+/*Portfolio*/
+#portfolio {}
+.text{
+	margin-bottom: 50px;
+	color: white;
+	text-align: center;
+}    
 
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl {
   max-width: 1920px;
