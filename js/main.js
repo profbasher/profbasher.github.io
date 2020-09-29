@@ -1,4 +1,4 @@
-$(document).ready(function(){
+
   var offset = 200;
       var duration = 500;
       $(window).scroll(function() {
@@ -16,5 +16,11 @@ $(document).ready(function(){
         }, 600);
         return false;
       });
-});
+
+
+/* $(document).ready(function(){
+  $("button").click(function(){
+    $("p").slideToggle();
+  });
+}); */
 
