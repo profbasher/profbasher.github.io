@@ -10126,7 +10126,7 @@ header.masthead h1 {
 }
 /*Portfolio*/
 #portfolio {
-	
+	padding-top: 50px;
 }
 .text{
 	margin-bottom: 40px;
