@@ -10125,7 +10125,9 @@ header.masthead h1 {
   }
 }
 /*Portfolio*/
-#portfolio {}
+#portfolio {
+	margin-top:30px;
+}
 .text{
 	margin-bottom: 50px;
 	color: white;
@@ -10162,10 +10164,10 @@ header.masthead h1 {
   --input-padding-y: .75rem;
 }
 
-/* body {
+ body {
   background: #007bff;
   background: linear-gradient(to right, #0062E6, #33AEFF);
-} */
+} 
 
 .card-signin {
   border: 0;
