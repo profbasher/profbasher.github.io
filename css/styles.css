@@ -10126,13 +10126,13 @@ header.masthead h1 {
 }
 /*Portfolio*/
 #portfolio {
-	margin-top:30px;
+	
 }
 .text{
 	margin-bottom: 50px;
 	color: white;
 	text-align: center;
-	margin-top:45px;
+	margin-top:60px;
 }    
 
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl {
