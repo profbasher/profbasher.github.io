@@ -20,3 +20,20 @@ body {
 .portfolio-item {
   margin-bottom: 30px;
 }
+/*back to top*/
+.back_to_top {
+    float: right;
+    margin-right: 15px;
+    border: 2px solid #d2c4c4;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding-top: 3px;
+	cursor: pointer;
+
+}
+.back_to_top p{
+    font-size: 14px;
+    color: #FFF;
+}
