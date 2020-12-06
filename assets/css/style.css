@@ -1096,6 +1096,6 @@ section {
   
 }
 #gb-widget-5938{
-    bottom: 85px;
-    right: 16px;
+    bottom: 85px !important;
+    right: 16px !important;
 }
