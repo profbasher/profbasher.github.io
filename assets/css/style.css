@@ -1093,9 +1093,10 @@ section {
 }
 /*CALL NOW*/
 .jxPOhn{
-  
+  right: -10px !important;
+  bottom: 45px !important;
 }
-#gb-widget-403 {
-    bottom: 85px !important;
-    right: 16px !important;
+
+.fprIlH{
+  display:none !important;
 }
