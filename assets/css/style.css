@@ -1100,3 +1100,9 @@ section {
 .fprIlH{
   display:none !important;
 }
+
+/*verticle social */
+.sthoverbuttons-label{display: inline-block;
+    font-size: 10px;
+    color: #fff;
+    }
