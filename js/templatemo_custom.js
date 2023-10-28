@@ -119,7 +119,7 @@ function loadScript() {
 
 function initialize() {
     var mapOptions = {
-	center: new google.maps.LatLng(40.7828839,-73.9652425),
+	center: new google.maps.LatLng(23.777729,89.651056),
 	zoom: 15,
 	scrollwheel: false,
 	mapTypeId: google.maps.MapTypeId.ROADMAP
