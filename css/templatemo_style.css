@@ -681,6 +681,18 @@ h1 {
     .templatemo_webtitle span {
         font-size: 12px;
     }
+    /*.col-md-6.copyright {
+        text-align: center;
+    }
+    .col-md-6.social_links{
+        text-align: center!important;
+    }*/
+    .templatemo_footer{
+        text-align: center;
+    }
+    .col-md-6.social_links {
+        display: inline-flex;
+    }
 }
 
 @media (min-width: 767px) {
