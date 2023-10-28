@@ -184,6 +184,9 @@ h1 {
 .templemo_hometop_img {
     margin: 20px auto;
 }
+p.basher {
+    text-align: center;
+}
 
 .templemo_hometop_img img {
     width: 100%;
