@@ -684,12 +684,6 @@ p.basher {
     .templatemo_webtitle span {
         font-size: 12px;
     }
-    /*.col-md-6.copyright {
-        text-align: center;
-    }
-    .col-md-6.social_links{
-        text-align: center!important;
-    }*/
     .templatemo_footer{
         text-align: center;
     }
@@ -700,6 +694,7 @@ p.basher {
         margin: 0px 0px 0px 0px;
         text-align: center;
     }
+
     .templatemo_home_botheader {
         font-size: 13px;
         text-align: center;
@@ -709,6 +704,7 @@ p.basher {
         color: #2099ec;
         text-align: center!important;
     }
+}
 
 @media (min-width: 767px) {
     .templatemo_webtitle {
