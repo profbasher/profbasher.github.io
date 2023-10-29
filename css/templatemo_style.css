@@ -696,7 +696,19 @@ p.basher {
     .col-md-6.social_links {
         display: inline-flex;
     }
-}
+    .templatemo_home_bot div.col-md-2, .templatemo_home_bot div.col-md-4 {
+        margin: 0px 0px 0px 0px;
+        text-align: center;
+    }
+    .templatemo_home_botheader {
+        font-size: 13px;
+        text-align: center;
+    }
+    .templatemo_home_botsubheader {
+        font-size: 13px;
+        color: #2099ec;
+        text-align: center!important;
+    }
 
 @media (min-width: 767px) {
     .templatemo_webtitle {
