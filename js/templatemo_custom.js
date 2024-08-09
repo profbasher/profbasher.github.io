@@ -132,3 +132,9 @@ function initialize() {
 		{
 			map.setCenter(center);
 		});
+
+		/*Back to top start*/
+
+
+		  
+		/*Back to top end*/
