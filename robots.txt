@@ -1,5 +1,3 @@
 User-agent: *
 Disallow: 
-Disallow: /images/
-Disallow: /fonts/
 Sitemap: https://basherbd.github.io/sitemap.xml
