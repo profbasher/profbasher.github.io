@@ -1,3 +1,2 @@
 User-agent: *
-Disallow: 
 https://basherbd.github.io/sitemap.xml
