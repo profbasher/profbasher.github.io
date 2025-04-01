@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Tabs</title>
+    <style>
+        /* Unique class names to prevent conflicts */
+        .vtabs-container {
+            display: flex;
+            flex-direction: row;
+            min-height: 300px;
+            width: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .vtabs-nav {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            background-color: #f1f1f1;
+            border-right: 1px solid #ddd;
+        }
+
+        .vtabs-tab {
+            padding: 15px 20px;
+            text-decoration: none;
+            color: #333;
+            border-bottom: 1px solid #ddd;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+        .vtabs-tab:hover {
+            background-color: #e5e5e5;
+        }
+
+        .vtabs-tab.active {
+            background-color: white;
+            font-weight: bold;
+            border-right: 3px solid #4CAF50;
+        }
+
+        .vtabs-content {
+            flex: 1;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .vtabs-panel {
+            display: none;
+        }
+
+        .vtabs-panel.active {
+            display: block;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .vtabs-container {
+                flex-direction: column;
+            }
+
+            .vtabs-nav {
+                width: 100%;
+                flex-direction: row;
+                overflow-x: auto;
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .vtabs-tab {
+                white-space: nowrap;
+                border-bottom: none;
+                border-right: 1px solid #ddd;
+            }
+
+            .vtabs-tab.active {
+                border-right: none;
+                border-bottom: 3px solid #4CAF50;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="vtabs-container">
+        <div class="vtabs-nav">
+            <a href="#tab1" class="vtabs-tab active" data-tab="tab1">Tab 1</a>
+            <a href="#tab2" class="vtabs-tab" data-tab="tab2">Tab 2</a>
+            <a href="#tab3" class="vtabs-tab" data-tab="tab3">Tab 3</a>
+            <a href="#tab4" class="vtabs-tab" data-tab="tab4">Tab 4</a>
+        </div>
+
+        <div class="vtabs-content">
+            <div id="tab1" class="vtabs-panel active">
+                <h2>Tab 1 Content</h2>
+                <p>This is the content for Tab 1.</p>
+            </div>
+            <div id="tab2" class="vtabs-panel">
+                <h2>Tab 2 Content</h2>
+                <p>This is the content for Tab 2.</p>
+            </div>
+            <div id="tab3" class="vtabs-panel">
+                <h2>Tab 3 Content</h2>
+                <p>This is the content for Tab 3.</p>
+            </div>
+            <div id="tab4" class="vtabs-panel">
+                <h2>Tab 4 Content</h2>
+                <p>This is the content for Tab 4.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all tab elements
+            const tabs = document.querySelectorAll('.vtabs-tab');
+            
+            // Function to switch tabs
+            function switchTab(tabId) {
+                // Remove active class from all tabs and panels
+                tabs.forEach(tab => tab.classList.remove('active'));
+                document.querySelectorAll('.vtabs-panel').forEach(panel => {
+                    panel.classList.remove('active');
+                });
+                
+                // Add active class to clicked tab and corresponding panel
+                const selectedTab = document.querySelector(`.vtabs-tab[data-tab="${tabId}"]`);
+                const selectedPanel = document.getElementById(tabId);
+                
+                if (selectedTab && selectedPanel) {
+                    selectedTab.classList.add('active');
+                    selectedPanel.classList.add('active');
+                }
+                
+                // Update URL hash without scrolling
+                history.replaceState(null, null, `#${tabId}`);
+            }
+            
+            // Add click event listeners to tabs
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const tabId = this.getAttribute('data-tab');
+                    switchTab(tabId);
+                });
+            });
+            
+            // Check URL hash on page load
+            function checkHash() {
+                const hash = window.location.hash.substring(1);
+                if (hash && document.getElementById(hash)) {
+                    switchTab(hash);
+                }
+            }
+            
+            // Initial check
+            checkHash();
+            
+            // Also check hash when navigating back/forward
+            window.addEventListener('hashchange', checkHash);
+        });
+    </script>
+</body>
+</html>
