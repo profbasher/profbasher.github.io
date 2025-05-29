@@ -215,6 +215,11 @@ textarea::-webkit-scrollbar-thumb{
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 	border: 1px solid dodgerblue;
 }
+/* Optional: Floating-style modal customization */
+    .modal-dialog {
+      top: 20%;
+      transform: translateY(-10%);
+    }
 @media(max-width: 1100px){
 	.messageForm .halfWidth{
 		flex-basis: 100%;
