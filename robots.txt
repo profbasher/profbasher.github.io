@@ -1,2 +1,2 @@
 User-agent: *
-https://basherbd.github.io/sitemap.xml
+https://profbasher.github.io/sitemap.xml
